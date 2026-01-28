@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// ƒQ[ƒ€ƒNƒŠƒAˆ—
     /// </summary>
-    void GameClear()
+    public void GameClear()
     {
         Time.timeScale = 0f;
         ShowUI(GameResult.Clear);

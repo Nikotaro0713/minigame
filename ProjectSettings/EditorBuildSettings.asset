@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlockBreaking.unity
     guid: 106f49de055a3eb4b9864614be004cb7
+  - enabled: 1
+    path: Assets/Scenes/MarbleMaze.unity
+    guid: b4d430af6af50a443ac8f786de71eece
   m_configObjects: {}

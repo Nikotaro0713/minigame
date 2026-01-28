@@ -62,7 +62,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BlockBreaking\GameManager.cs" />
     <Compile Include="Assets\Scripts\BlockBreaking\BarController.cs" />
+    <Compile Include="Assets\Scripts\MarbleMaze\MarbleController.cs" />
     <Compile Include="Assets\Scripts\BlockBreaking\SceneChange.cs" />
+    <Compile Include="Assets\Scripts\MarbleMaze\GravityController.cs" />
     <Compile Include="Assets\Scripts\BlockBreaking\BallController.cs" />
   </ItemGroup>
   <ItemGroup>
