@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
     [SerializeField] private float moveSpeed = 4.0f;
-    [SerializeField] private float jumpForce = 300.0f;
+    [SerializeField] private float jumpForce = 10.0f;
     private Rigidbody2D rb;
     [SerializeField] private int maxJumpCount = 2;
     private int jumpCount = 0;
     private float moveDir;
+
+    private int keyCount = 0;
+    [SerializeField] private int maxKeyCount = 2;
 
     private void Awake()
     {
@@ -46,6 +50,19 @@ public class PlayerController : MonoBehaviour
                     break;
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Key"))
+        {
+            keyCount++;
+            collision.gameObject.SetActive(false);
+        }
+        else if(collision.CompareTag("Goal") && keyCount >= maxKeyCount)
+        {
+            gameManager.GameClear();
         }
     }
 }

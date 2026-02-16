@@ -9,6 +9,7 @@ TagManager:
   - Hole
   - Goal
   - Ground
+  - Key
   layers:
   - Default
   - TransparentFX
