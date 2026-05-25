@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EscapeGame\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\EscapeGame\EnemyController.cs" />
     <Compile Include="Assets\Scripts\System\GameManager.cs" />
     <Compile Include="Assets\Scripts\System\SceneChange.cs" />
     <Compile Include="Assets\Scripts\BlockBreaking\BarController.cs" />
