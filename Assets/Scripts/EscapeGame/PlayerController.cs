@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else if(collision.collider.CompareTag("Enemy") || collision.collider.CompareTag("Hole"))
+        {
+            gameManager.GameOver();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

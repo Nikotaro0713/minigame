@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         float enemyMoveDir = Mathf.Sign(player.transform.position.x - transform.position.x);
+        //float enemyMoveDir = player.transform.position.x - transform.position.x;
 
         if ((transform.position.x > maxPos && enemyMoveDir > 0) ||
             (transform.position.x < minPos && enemyMoveDir < 0))
